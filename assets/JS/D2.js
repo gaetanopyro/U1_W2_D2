@@ -9,19 +9,32 @@
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-
+let numbers = 10;
+if (numbers !== 5) {
+  console.log("not equal");
+}
 /* ESERCIZIO 3
   Scrivi un algoritmo che mostri "divisibile per 5" in console se un numero fornito è perfettamente divisibile per 5 (suggerimento: usa l'operatore modulo)
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-const myDivision = 5 % 2;
+/*let myDivision = 5;
+if (myDivision % 5) {
+  console.log("è perfettamente divisibile");
+}
+  non funziona
+  */
+const myDivision = 5 % 5;
 console.log(myDivision);
 /* ESERCIZIO 4
   Scrivi un algoritmo per verificare che, dati due numeri interi, il valore di uno di essi sia 8 oppure se la loro addizione/sottrazione sia uguale a 8.
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+const numb1 = 16;
+const numb2 = 8;
+const subtraction = numb1 - numb2;
+console.log(subtraction);
 
 /* ESERCIZIO 5
   Stai lavorando su un sito di e-commerce. Stai salvando il saldo totale del carrello dell'utente in una variabile "totalShoppingCart".
@@ -83,27 +96,35 @@ const me = {
 };
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-
+me.city = "Toronto";
+console.log(me.city);
 /* ESERCIZIO 12
   Lavorando sempre sull'oggetto precedentemente fornito, scrivi del codice per rimuovere la proprietà "lastName".
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-
+delete me.lastName;
+console.log(me);
 /* ESERCIZIO 13
   Lavorando sempre sull'oggetto precedentemente fornito, scrivi del codice per rimuovere l'ultimo elemento della proprietà "skills".
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-
+me.skills.pop(2);
+console.log(me.skills);
 /* ESERCIZIO 14
   Scrivi del codice per creare un array inizialmente vuoto. Riempilo successivamente con i numeri da 1 a 10.
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-
+const myNumber = [];
+console.log(myNumber);
+myNumber.splice(0, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
+console.log(myNumber);
 /* ESERCIZIO 15
   Scrivi del codice per sostituire l'ultimo elemento dell'array, ovvero il valore 10, con il valore 100.
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+myNumber[myNumber.length - 1] = 100;
+console.log(myNumber);
